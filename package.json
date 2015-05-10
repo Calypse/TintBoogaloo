@@ -1,0 +1,12 @@
+{
+"name": "Tint",
+"version": "0.0.1",
+"description": "Sentiment Analysis for Tint",
+"private": true,
+"dependencies": {
+        "express": "3.x",
+        "sentiment": "1.0.2",
+	"twitter": "1.2.5"
+        }
+}
+
