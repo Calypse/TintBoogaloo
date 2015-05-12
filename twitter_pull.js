@@ -4,12 +4,11 @@ var sentiment = require('sentiment');
 
 // Twitter Login
 var client = new Twitter({
- // HIDDEN
+  // HIDDEN
 });
 
 var params = {screen_name: process.argv[2], count: 200}; // cmd line arg username to search
 
-//getTweetPage(sortByScore);
 getFullHistory(sortByScore);
 
 function getFullHistory(callback){
@@ -43,7 +42,6 @@ function getFullHistory(callback){
 				} else {
 					page_num = 15;
 					console.log("End of tweets @ " + data[data.length-1].id);
-					//console.log(full);
 					callback(full);
 				}
 			}
@@ -58,9 +56,7 @@ function getTweetPage(args, callback, param1){
 	client.get('statuses/user_timeline', args, function(error, tweets, response){
 		if (!error) {
 			async.each(tweets, function(item, callback){ // iterate over ever element of the JSON array
-				//tweet_arr.push(JSON.stringify(item["text"])); // save all text bodies, strip irrelevant data		
 				tweet_arr.push(item); // push RAW JSON to tweet array
-				//console.log("Pulling with max_id " + args.max_id);
 				callback(); // confirmation callback
 			}, function(err){
 					if(err){console.log(err);
