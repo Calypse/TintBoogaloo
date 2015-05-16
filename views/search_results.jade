@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+
+	head
+		include head_logo.jade
+		script(src='http://www.google.com/jsapi').
+	body
+		div#overall
+			h1= query
+			if score > 0
+				h2#positive_score Total Score: #{score}
+			if score < 0
+				h2#negative_score Total Score: #{score}
+			if score === 0
+				h2 Total Score: #{score}
+
+			if median > 0
+				h2#positive_score Median Score: #{median}
+			if median < 0
+				h2#negative_score Median Score: #{median}
+			if median === 0
+				h2 Median Score: #{median}
+
+			
+
+			div#content_body
+				table
+					thead
+						tr: th Most Positive Tweet
+					tbody
+						tr
+							td
+								h3#positive_score= highest_tweet
+					
+				table
+					thead
+						tr: th Least Positive Tweet
+					tbody
+						tr
+							td
+								h3#negative_score= lowest_tweet
+				
+				table
+					thead
+						tr: th Tweets
+					tbody
+						each obj, i in userTweets
+							tr
+							if i%2 === 0
+								td
+									if obj > 0
+										h4#positive_score= obj
+									
+									if obj < 0
+										h4#negative_score= obj
+									
+									if obj == 0
+										h4= obj
+									
+								td
+									p= userTweets[i+1]
+								

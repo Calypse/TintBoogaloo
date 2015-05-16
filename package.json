@@ -1,12 +1,13 @@
 {
-"name": "Tint",
-"version": "0.0.1",
-"description": "Sentiment Analysis for Tint",
-"private": true,
-"dependencies": {
-        "express": "3.x",
-        "sentiment": "1.0.2",
-	"twitter": "1.2.5"
-        }
+  "name": "Tint",
+  "version": "0.0.1",
+  "description": "Sentiment Analysis for Tint",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "sentiment": "1.0.2",
+    "twitter": "1.2.5",
+    "body-parser": "^1.5.2",
+    "jade": "~1.9.2"
+  }
 }
-

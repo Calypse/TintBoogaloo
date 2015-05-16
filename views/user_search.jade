@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+
+	head
+		include head_logo.jade
+	
+	body
+		div#content_body
+			table
+				thead
+					tr: th Tweets
+				tbody
+					each obj, i in userTweets
+						tr
+						if i%2 === 0
+							td
+								if obj > 0
+									h4#positive_score= obj
+								
+								if obj < 0
+									h4#negative_score= obj
+								
+								if obj == 0
+									h4= obj
+								
+							td
+								p= userTweets[i+1]
+							

@@ -1,0 +1,59 @@
+body{
+	margin-top: 0px; margin-left:0px;
+}
+
+#overall{
+	margin-left:15%;
+	margin-right:auto;
+	margin-bottom:100px;
+}
+
+#positive_score{
+	color:#2FC2C7;
+}
+
+#negative_score{
+	color:#FF564B;
+}
+
+#logo{
+	background-color: #FF564B;
+	width: 100%;
+	height: 75px;
+	margin-top: 0px; margin-bottom: 100px;
+	padding-left: 35px;
+	font-family: helvetica;
+}
+
+
+#logo h1{
+	color: #1C202B;
+	text-align: left;
+	margin: 0px;
+	padding-bottom:15px;
+	padding-top:18px;
+}
+
+#content_body{
+	background-color: #FEFEFF;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+
+	font-family: helvetica;
+}
+
+#searchable{
+	margin-left:auto; margin-right:auto;
+	width:50%;
+}
+
+.search_bar{
+	width:60%;
+	height:25px;
+}
+
+.search_button{
+	height:25px;
+	width:75px;
+}

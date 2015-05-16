@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+
+	head
+		include head_logo.jade
+
+	body
+		div#searchable
+			form(id="username_search", action= "/search_action", method="post")
+				input(type="text", id="username_search", class="search_bar", name="search")
+				select(id="username_search", class="search_button", name="opt")
+					option(value="Keyword", selected)
+						| Keyword
+					option(value="User")
+						| User
+				input(type="submit", value="Search", class="search_button", id="username_search")
