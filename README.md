@@ -8,10 +8,10 @@ Written in NodeJS thanks to
 4. [Jade](http://jade-lang.com/)
 
 # Features
-1. Sentiment Analysis
+1. Sentiment analysis
 2. Ranking by score
-3. Median Sentiment Score
-4. Total Sentiment Score
+3. Median sentiment score
+4. Total sentiment score
 5. Paginated user tweet search (3200 tweets max)
-6. Highest and Lowest scored tweets
+6. Highest and lowest scored tweets
 7. Creates world peace (<3)
