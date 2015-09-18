@@ -9,10 +9,10 @@ var app = express();
 
 // Twitter Login
 var client = new Twitter({
-  consumer_key: 'qTfJ0DwjdU2nhT4VY7QigReNN',
-  consumer_secret: '3NMiGZOl8FvMtbNGaCLFc8uQV7MXWd7adb0hyAXdPzVTQi5pap',
-  access_token_key: '33439058-yfzpd3EQr24yrHqoPfGfsgwwQFIDn1zcDbbpdex6g',
-  access_token_secret: 'Q5XrwNJIKnLFhA9n44b6sVZMJVmBlO4nSTWs8Dhbhivzt'
+  consumer_key: 
+  consumer_secret: 
+  access_token_key: 
+  access_token_secret: 
 });
 
 
